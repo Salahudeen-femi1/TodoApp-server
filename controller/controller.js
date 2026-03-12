@@ -16,7 +16,7 @@ export async function createTask(req, res) {
                 message: 'Unable to create task'
             })
         }
-
+ 
         res.status(200).json({
             status: 'success',
             message: 'Succesfully created a task',
@@ -42,7 +42,7 @@ export async function getTask(req, res) {
 
         res.status(200).json({
             status: 'success',
-            message: 'fetched saved data successfully',
+            message: 'fetched saved data successfully',  
             task
         })
 
